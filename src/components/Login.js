@@ -26,25 +26,25 @@ export const Login = () => {
 	}
 
 	return (
-		<div className='container p-4 row'>
+		<div className='container-fluid p-5 mt-5 mx-auto align-items-center row'>
 			<div className="col-md-8">
-				<div id="carouselExample" className="carousel slide carousel-fade">
+				<div id="carouselExampleInterval" className="carousel slide mt-5" data-bs-ride="carousel">
 					<div className="carousel-inner">
-						<div className="carousel-item active">
-							<img src={Uno} className="tamaño-imagen" alt="" />
+						<div className="carousel-item active" data-bs-interval="5000">
+							<img src={Uno} className="d-block w-100 mt-5" alt="" />
 						</div>
-						<div className="carousel-item">
-							<img src={Dos} className="tamaño-imagen" alt="" />
+						<div className="carousel-item" data-bs-interval="3000">
+							<img src={Dos} className="d-block w-100 mt-5" alt="" />
 						</div>
-						<div className="carousel-item">
-							<img src={Tres} className="tamaño-imagen" alt="" />
+						<div className="carousel-item" data-bs-interval="3000">
+							<img src={Tres} className="d-block w-100 mt-5" alt="" />
 						</div>
 					</div>
-					<button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+					<button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
 						<span className="carousel-control-prev-icon" aria-hidden="true"></span>
 						<span className="visually-hidden">Previous</span>
 					</button>
-					<button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+					<button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
 						<span className="carousel-control-next-icon" aria-hidden="true"></span>
 						<span className="visually-hidden">Next</span>
 					</button>
@@ -68,12 +68,12 @@ export const Login = () => {
 							{registro ? 'registrate' : 'inicia sesion'}
 						</button>
 					</form>
-
-					<div className='form-group'>
-						<button className='btn btn-secondary mt-4 form-control' onClick={() => setRegistro(!registro)}>
+					<div className='form-group text-center'>
+						<button className='btn btn-secondary py-1 mt-5' onClick={() => setRegistro(!registro)}>
 							{registro ? 'ya estas registrado? inicia sesion' : 'no tienes cuenta? Registrate'}
 						</button>
 					</div>
+
 				</div>
 			</div>
 		</div>
