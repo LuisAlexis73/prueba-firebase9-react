@@ -6,6 +6,8 @@ En este proyecto simple, simule un formulario simple y pequeño con algunas vali
 
 Aproveche para poner en practica el implementar Bootstrap y coloque un slider con imagenes muuy random 😁
 
+https://prueba-firebase9-01.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
